@@ -12,8 +12,8 @@ GO
 
 CREATE TABLE dept.department(
 	id INT PRIMARY KEY IDENTITY (1,1),
-	nombre VARCHAR (150) NOT NULL,
-	descripction VARCHAR(300) NOT NULL
+	name VARCHAR (150) NOT NULL,
+	description VARCHAR(300) NOT NULL
 )
 
 
