@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using school_departments.Models;
 using school_departments.Resources;
 using System.Data;
 using System.Text.Json.Serialization;
@@ -21,7 +22,7 @@ namespace school_departments.Controllers
             {
                 success = true,
                 message = "success",
-                data = deptJSON
+                data = JsonConvert.DeserializeObject<List<Department>>(deptJSON)
             };
         }
     }
